@@ -1,0 +1,112 @@
+%==============================================================================
+% PROJECTS SECTION - LaTeX Code for Overleaf
+% For use in your CV/Resume
+% Author: BasantAwad
+%==============================================================================
+
+% Paste this section into your Overleaf CV document
+
+%==============================================================================
+\section{Projects}
+%==============================================================================
+
+\resumeSubHeadingListStart
+
+%==============================================================================
+% PROJECT 1: ColdBridge
+%==============================================================================
+\resumeProjectHeading
+{%
+  \textbf{ColdBridge Middleware: Serverless Cold-Start Mitigation}
+  \hfill
+  \href{https://github.com/BasantAwad/ColdBridge}{\underline{GitHub}}
+}
+{Python, Rust, Go, PyTorch, eBPF, MLflow, DVC}
+\resumeItemListStart
+  \resumeItem{Designed a high-fidelity middleware pipeline to eliminate serverless cold starts using time-series forecasting (Chronos engine) and deep reinforcement learning (PPO optimization)}
+  \resumeItem{Implemented kernel-level monitoring via eBPF probes in Rust, achieving sub-80ms latency detection with edge function mocking}
+  \resumeItem{Achieved reproducible research standards: deterministic experiment harness with MLflow CI tracking, DVC pipeline versioning, and comprehensive ablation tests}
+  \resumeItem{Multi-module architecture: Python/PyTorch forecasting engine, Rust/eBPF kernel probing, Go high-throughput API gateway, Python RL environment}
+  \resumeItem{Metrics tracked: Cold Start Rate (CSR), P99 Init Latency, Pool Resource Overhead (PRO)}
+\resumeItemListEnd
+
+%==============================================================================
+% PROJECT 2: Nexus Distributed File Storage Platform
+%==============================================================================
+\resumeProjectHeading
+{%
+  \textbf{Nexus Distributed File Storage Platform}
+  \hfill
+  \href{https://github.com/BasantAwad/File-Storage-platform}{\underline{GitHub}}
+}
+{Node.js, Express, PostgreSQL, MongoDB, Apache Kafka, Docker, Docker Compose}
+\resumeItemListStart
+  \resumeItem{Led development of microservices-based distributed file system with 8 interconnected services handling file operations at scale}
+  \resumeItem{Architected and implemented File Quota Service and Presigned URL Service (core platform services) with PostgreSQL backend and standard REST patterns}
+  \resumeItem{Designed cross-service communication using Apache Kafka event streaming: \texttt{api\_key.created}, \texttt{rate\_limit.exceeded}, \texttt{file.downloaded}, \texttt{file.shared}}
+  \resumeItem{Implemented enterprise-grade patterns: API key management with SHA-256 hashing, sliding-window rate limiting (1-minute window), health/readiness probes on every service}
+  \resumeItem{Deployed via Docker Compose with standardized JSON response envelopes, request IDs, and service metadata across all 8 microservices}
+  \resumeItem{Ensured high availability: 2-replica deployment per service via PM2 cluster mode, graceful shutdown handling, automated database migrations}
+\resumeItemListEnd
+
+%==============================================================================
+% PROJECT 3: NovaCare AI Healthcare Companion
+%==============================================================================
+\resumeProjectHeading
+{%
+  \textbf{NovaCare: AI-Powered Healthcare Companion}
+  \hfill
+  \href{https://github.com/BasantAwad/NovaCare}{\underline{GitHub}}
+}
+{Python, Flask, HuggingFace API, SQLAlchemy, Bootstrap 5, Chart.js, SQLite}
+\resumeItemListStart
+  \resumeItem{Led cross-functional team of 5 to develop full-stack healthcare web application with emotional support chatbot and medical Q&A engine}
+  \resumeItem{Integrated HuggingFace Inference API for multi-pipeline AI orchestration: conversational AI, emotion analysis, and medical question answering}
+  \resumeItem{Designed Flask backend architecture with SQLAlchemy ORM models, blueprinted route handlers, and modular AI implementation files}
+  \resumeItem{Implemented vital signs monitoring dashboard: real-time heart rate and SpO₂ tracking with Chart.js visualization and emergency alert detection}
+  \resumeItem{Created REST API endpoints (\texttt{/api/chat}, \texttt{/api/vitals}, \texttt{/api/alerts}, \texttt{/api/medication}) with standardized JSON responses}
+  \resumeItem{Built responsive frontend with Bootstrap 5, integrated user authentication, medication management, and alert history logging}
+\resumeItemListEnd
+
+%==============================================================================
+% PROJECT 4: Reinforcement Learning Game (Optional - only if space permits)
+%==============================================================================
+\resumeProjectHeading
+{%
+  \textbf{Reinforcement Learning Game Agent}
+  \hfill
+  \href{https://github.com/BasantAwad/Reinforcement-Learning-Game}{\underline{GitHub}}
+}
+{Python, PyTorch, OpenAI Gym}
+\resumeItemListStart
+  \resumeItem{Developed and trained deep Q-learning agent using PyTorch to master complex game environments}
+  \resumeItem{Implemented experience replay, target networks, and epsilon-greedy exploration strategies for stable convergence}
+  \resumeItem{Achieved convergence on multiple Atari environments with reward analysis and performance benchmarking}
+\resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+% ==============================================================================
+% END OF PROJECTS SECTION
+% ==============================================================================
+
+
+%==============================================================================
+% ALTERNATIVE FORMAT: Compact Single-Line Projects
+% Use this if space is limited
+%==============================================================================
+
+\section{Projects}
+\resumeItemListStart
+  \resumeItem{\textbf{ColdBridge:} Serverless cold-start mitigation middleware using time-series forecasting (Chronos) and deep RL (PPO). Multi-language stack: Python/PyTorch, Rust/eBPF, Go. Reproducible research with MLflow, DVC, and ablation tests. \href{https://github.com/BasantAwad/ColdBridge}{\underline{GitHub}}}
+  
+  \resumeItem{\textbf{Nexus Distributed File Storage:} Led 8-microservice distributed system with Node.js/Express, PostgreSQL, MongoDB, Apache Kafka. Designed File Quota and Presigned URL services; implemented API key management, rate limiting, and event streaming. Docker deployment with 2-replica HA. \href{https://github.com/BasantAwad/File-Storage-platform}{\underline{GitHub}}}
+  
+  \resumeItem{\textbf{NovaCare Healthcare AI:} Full-stack healthcare companion (Flask, HuggingFace API, SQLAlchemy). Led team of 5; integrated conversational AI, emotion analysis, medical Q&A, vital monitoring dashboard. Implemented REST API with authentication and alert system. \href{https://github.com/BasantAwad/NovaCare}{\underline{GitHub}}}
+  
+  \resumeItem{\textbf{Reinforcement Learning Game:} Deep Q-learning agent (PyTorch) with experience replay and epsilon-greedy exploration on OpenAI Gym environments. \href{https://github.com/BasantAwad/Reinforcement-Learning-Game}{\underline{GitHub}}}
+\resumeItemListEnd
+
+% ==============================================================================
+% END OF ALTERNATIVE FORMAT
+% ==============================================================================
